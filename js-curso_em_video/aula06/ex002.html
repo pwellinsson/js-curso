@@ -21,7 +21,11 @@
     <h1>Hello Word!</h1>
     <p>Já me livrei da maldição!!</p>
     <script>
-        prompt('Qual é seu nome?') // Vai perguntar o nome...
+        var nome = prompt('Qual é seu nome?') // Vai perguntar o nome...
+        var age = prompt('Qual é a sua idade ' + nome + '?')
+        alert('É um grande prazer te conhecer, ' + nome) // Concatenação
+        alert('Você tem ' + age + ' anos, ' + nome)
+        alert(`Você tem ${age} anos, ${nome}`)
     </script>
 </body>
 </html>
