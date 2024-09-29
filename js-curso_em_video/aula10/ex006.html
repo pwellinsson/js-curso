@@ -5,8 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../favicon-js.ico" type="image/x-icon">
     <title>Eventos DOM</title>
+    <style>
+        h1 {
+            background-color: aliceblue;
+        }
+
+        #area {
+            font: normal 20px Arial, Helvetica, sans-serif;
+            background-color: #249e24b3;
+            color: aliceblue;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- Utilizando internamente no HTML
+        <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> -->
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        a = document.querySelector('div#area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+        }
+        
+        function entrar() {
+            a.innerText = 'Entrou!'
+            a.style.background = 'red'
+        }
+
+        function sair() {
+            a.innerHTML = '<strong>Saiu!</strong>'
+            a.style.background = '#249e24b3'
+        }
+    </script>
 </body>
 </html>
