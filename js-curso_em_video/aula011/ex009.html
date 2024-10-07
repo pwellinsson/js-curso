@@ -5,8 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../favicon-js.ico" type="image/x-icon">
     <title>AeroFront</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Verificador de Nacionalidade</h1>
+    País de nascimento: <input type="text" name="nasc" id="nasc">
+    <input class="botao" type="button" value="Inserir" onclick="nascimento()">
+    <input class="botao" type="button" value="Remover" onclick="remover()">
+    <div id="resp"></div>
+    <script src="ex009.js"></script>
 </body>
 </html>
