@@ -1,7 +1,13 @@
 @charset "UTF-8";
 
+:root {
+    --cor1: #478eeb;
+    --cor2: #dfa334;
+    --cor3: #dca236;
+}
+
 body {
-    background-color: rgb(71, 142, 235);
+    background-color: var(--cor1);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
@@ -20,7 +26,22 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.216);
 }
 
+#image {
+    margin-left: 100px;
+}
+
 footer {
     text-align: center;
     font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor2);
+    text-shadow: 4px 3px 8px rgba(0, 0, 0, 0.277)
+}
+footer > p > a:hover {
+    text-decoration: underline;
+    color: var(--cor3);
 }
