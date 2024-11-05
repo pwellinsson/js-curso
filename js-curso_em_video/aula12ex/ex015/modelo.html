@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../favicon-js.ico" type="image/x-icon">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento: 
+                <input type="number" name="nascimento" id="nascimento"></p>
+            <p>Sexo: 
+                <input type="radio" name="s_masc" id="s_masc" checked>
+                <label for="s_mascMasculino">Masculino</label>
+                <input type="radio" name="s_femin" id="s_femin">
+                <label for="s_femin">Feminino</label>
+            </p>
+            <p><input type="button" value="Verificar" onclick="verificar()"></p>
+        </div>
+        <div>
+            <p id="res">Preencha os dados acima para ver os resultados</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Pedro Wellinsson</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
