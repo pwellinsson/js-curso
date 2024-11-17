@@ -1,2 +1,2 @@
-# js-curso-p_w_
+# js-curso
  Curso de JavaScript feito com base nos canais "Programação Web" e "Curso em Vídeo"
