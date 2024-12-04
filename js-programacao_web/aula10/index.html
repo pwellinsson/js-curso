@@ -29,13 +29,25 @@
 
   <body>
     <h1>Aprendendo JavaScript</h1>
+    <p id="texto"></p>
     <input type="number" name="num1" id="num1" />+
     <input type="number" name="num2" id="num2" /> <br />
 
-    <button type="button" ondblclick="eventoClick()">Clique Aqui</button>
-    <p id="texto"></p>
+    <button type="button" ondblclick="eventoClick()">Clique Aqui</button
+    ><br /><br />
 
-    <p id="soma"></p>
+    <div
+      id="cor"
+      onmousemove="AdicionaTexto()"
+      onmouseover="MudaCor()"
+      onmouseout="VoltaCor()"
+      style="
+        margin: auto;
+        width: 80%;
+        height: 200px;
+        background-color: rgb(37, 37, 163);
+      "
+    ></div>
     <script src="js/index.js"></script>
   </body>
 </html>

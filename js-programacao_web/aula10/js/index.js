@@ -17,10 +17,26 @@ onblur -> Disparado quando o elemento perde o foco.
 onkeydown -> Disparado quando uma tecla é pressionada.
 onkeypress -> Disparado quando uma tecla é pressionada e solta.
 onkeyup -> Disparado quando uma tecla é solta sobre um elemento.
-onload -> Disparado quando 
+onload -> Disparado quando a página terminou de ser carregada. Body.
+onresize -> Disparado quando há um redimencionamento da janela.
 */
 
 function eventoClick() {
   alert("Acionou um evento de Click");
   document.body.style.backgroundColor = "yellowgreen";
+}
+
+function MudaCor() {
+  let div_cor = document.querySelector("div#cor");
+  div_cor.style.backgroundColor = "red";
+}
+
+function VoltaCor() {
+  let div_cor = document.querySelector("div#cor");
+  div_cor.style.backgroundColor = "rgb(37, 37, 163)";
+}
+
+function AdicionaTexto() {
+  let p = document.querySelector("p#texto");
+  p.append("O mouse moveu =/ ");
 }
