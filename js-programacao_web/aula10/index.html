@@ -21,8 +21,21 @@
       input#num1 {
         margin-right: 10px;
       }
+
       input#num2 {
         margin-left: 10px;
+      }
+
+      div#cor {
+        margin: auto;
+        width: 80%;
+        height: 200px;
+        background-color: rgb(37, 37, 163);
+      }
+
+      input#CampoTexto {
+        padding: 80px;
+        font-size: 40px;
       }
     </style>
   </head>
@@ -36,18 +49,9 @@
     <button type="button" ondblclick="eventoClick()">Clique Aqui</button
     ><br /><br />
 
-    <div
-      id="cor"
-      onmousemove="AdicionaTexto()"
-      onmouseover="MudaCor()"
-      onmouseout="VoltaCor()"
-      style="
-        margin: auto;
-        width: 80%;
-        height: 200px;
-        background-color: rgb(37, 37, 163);
-      "
-    ></div>
+    <div id="cor" onmouseover="MudaCor()" onmouseout="VoltaCor()"></div>
+    <br>
+    <input onfocus="LimpaTexto()" onchange="Mudou()" id="CampoTexto" type="Text" placeholder="Digite um Texto" value="Já vem com Texto">
     <script src="js/index.js"></script>
   </body>
 </html>

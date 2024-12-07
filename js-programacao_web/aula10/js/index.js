@@ -40,3 +40,11 @@ function AdicionaTexto() {
   let p = document.querySelector("p#texto");
   p.append("O mouse moveu =/ ");
 }
+
+function LimpaTexto() {
+  document.querySelector("input#CampoTexto").value = "";
+}
+
+function Mudou() {
+  console.log("Mudou");
+}
