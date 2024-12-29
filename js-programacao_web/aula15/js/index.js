@@ -24,3 +24,12 @@ for (let i = new Date().getFullYear(); i > 1900; i--) {
     "select#ano"
   ).innerHTML += `<option value='"${i}"'>${i}</option>`;
 }
+
+const carro = ["Gol", "Fusca", "Brasília", "Del Rey", "Chevette"];
+
+// document.querySelector("p#texto").innerHTML = carro;
+var tamanho = carro.length;
+
+for (let i = 0; i < tamanho; i++) {
+  document.querySelector("p#texto").innerHTML += ` ${carro[i]} -`;
+}
