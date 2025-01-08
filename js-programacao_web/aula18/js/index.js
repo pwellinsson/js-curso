@@ -76,7 +76,31 @@ dia_mes = d.getDate();
 mes = d.getMonth();
 ano = d.getFullYear();
 
+function addZero(x) {
+  return x < 10 ? "0" + x : "" + x;
+  // Se o x for menor que zero, retorna string "0x" senão retorna normalmente.
+}
 
-
-let data_padraoBR = `${dia_mes}/${mes + 1}/${ano}`;
+let data_padraoBR = `${addZero(dia_mes)}/${addZero(mes + 1)}/${ano}`;
 console.log(data_padraoBR);
+
+// Comparar datas - Maior ou menor. EX: Vencimentos.
+var hoje = new Date();
+var vencimento = new Date(2025, 0, 15); // 15 de jan. de 2025.
+
+if (hoje > vencimento) {
+  console.log("Sua conta está vencida!");
+} else {
+  console.log("Ainda não venceu, tudo certo!");
+}
+
+// Diferença entre duas datas em DIAS
+var data_inicial = new Date();
+var data_final = new Date(2025, 0, 15); // Quantos dias faltam até chegar neste dia
+
+var diferencaTempo = data_final.getTime() - data_inicial.getTime();
+
+var diferencaDias = Math.ceil(diferencaTempo / (24 * 60 * 60 * 1000));
+
+// console.log(`${data_inicial} \n${data_final} \n${diferencaTempo} \n${diferencaDias}`)
+console.log(`Diferença de dias: ${diferencaDias} dia(s)`);
