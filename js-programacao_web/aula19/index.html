@@ -6,23 +6,46 @@
     <link rel="shortcut icon" href="../../favicon-js.ico" type="image/x-icon" />
     <title>Aprendendo JS</title>
     <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
       body {
         text-align: center;
         background-color: aliceblue;
         font-family: Arial, Helvetica, sans-serif;
       }
 
-      button {
-        color: aliceblue;
+      h1 {
+        margin: 30px;
+      }
+
+      h2 {
+        margin: 20px;
+      }
+
+      main {
+        margin: auto;
+      }
+
+      button,
+      input {
+        color: darkblue;
         border-radius: 8px;
-        padding: 70px;
+        padding: 8px;
       }
     </style>
   </head>
 
   <body>
     <h1>JSON</h1>
-    <pre id="area"></pre>
+    <main>
+      <!-- <pre id="area"></pre> -->
+      <input id="cep" type="text" placeholder="Digite o seu CEP" />
+      <button onclick="buscarCEP()" style="font-weight: bold">Buscar</button>
+      <p id="texto"></p>
+    </main>
 
     <script src="js/index.js"></script>
   </body>
